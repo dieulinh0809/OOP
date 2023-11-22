@@ -7,7 +7,7 @@ using namespace std;
 
 class PhanSo{
     private :
-        float a,b,c,d;
+        int a,b,c,d;
     public:
             void Nhap();
             int TinhTong();
