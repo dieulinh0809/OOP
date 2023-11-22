@@ -9,6 +9,7 @@ class PhanSo{
     private :
         float a,b,c,d;
     public:
+            void Nhap();
             int TinhTong();
             int RutGon();
 
