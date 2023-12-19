@@ -112,9 +112,11 @@ Bài 29(lthdtbai29.cpp): Nhập vào một số nguyên dương, đưa ra số h
 Y/c trong chương trình có sử dụng ngăn xếp để chuyển từ số thập phân sang hex.
 Ngăn xếp sử dụng cấu trúc lưu trữ phân tán với phần tử là ký tự.
 
-Bài 30(lthdtbai30.cpp): Đọc vào một dãy số nguyên từ tệp văn bản, trong đó có cả số dương và số âm.
-Sử dụng hàng đợi lưu trữ kế tiếp theo kiểu quay vòng để tách, đưa ra màn hình đồng thời
-ghi ra tệp văn bản dãy các số dương và dãy các số âm.
+Bài 30(lthdtbai30.cpp): Cho tệp văn bản "daysonguyen-bai30.txt" chứa dãy số nguyên,
+trong đó có cả số dương và số âm, trên tệp không có thông tin về số lượng số.
+Sử dụng hàng đợi lưu trữ kế tiếp để tách, đưa ra màn hình dãy các số dương và dãy các số âm,
+mỗi dãy số trên một dòng.
+
 
 Bài 31(lthdtbai31.cpp): Cho tệp văn bản "daysonguyen-bai31.txt" chứa một dãy số nguyên,
 trên tệp không có thông tin về số lượng số. Đọc từng số của dãy số từ tệp,
