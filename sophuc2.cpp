@@ -21,6 +21,7 @@ class SoPhuc
 
         //Ham ban
         friend istream& operator>>(istream &cin,SoPhuc &p);
+        //friend ifstream& operator>>(ifstream &fin,SoPhuc &p)
         friend ostream& operator<<(ostream &cout,SoPhuc &p);
 };
 
