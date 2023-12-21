@@ -2,6 +2,7 @@
 trong đó có cả số dương và số âm, trên tệp không có thông tin về số lượng số.
 Sử dụng hàng đợi lưu trữ kế tiếp để tách, đưa ra màn hình dãy các số dương và dãy các số âm,
 mỗi dãy số trên một dòng.*/
+
 #include<iostream>
 #include<stdio.h>
 #include<fstream>
