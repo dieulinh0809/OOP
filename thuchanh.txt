@@ -122,6 +122,7 @@ Bài 31(lthdtbai31.cpp): Cho tệp văn bản "daysonguyen-bai31.txt" chứa m�
 trên tệp không có thông tin về số lượng số. Đọc từng số của dãy số từ tệp,
 nếu là số nguyên tố thì đưa vào hàng đợi. Đưa ra màn hình dãy số đọc từ tệp và
 dãy số nguyên tố trong hàng đợi. Yêu cầu cài đặt và sử dụng hàng đợi lưu trữ phân tán.
+
 Bài 32(lthdtbai32.cpp): Cho tệp văn bản "daysonguyen-bai32.txt" chứa dãy số nguyên,
 trên tệp không có thông tin về số phần tử của dãy số. Đọc dãy số từ tệp văn bản, lưu dãy số trong
 danh sách liên kết đơn theo đúng thứ tự trên tệp. Đưa dãy số trong DSLKD ra màn hình.
