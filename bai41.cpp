@@ -59,7 +59,16 @@ void NgayThang::nhap()
 
 void NgayThang::hien()
 {
-    cout<<dd<<"/"<<mm<<"/"<<yy;
+    if(dd<0 && mm<0 && yy<0){
+        cout<<"Khong hop le !";
+        return ;
+    }
+    else if(yy<10){
+        cout<<dd<<"/"<<mm<<"/0"<<yy;
+    }else
+    {
+         cout<<dd<<"/"<<mm<<"/"<<yy;
+    }
 }
 
 void ThoiGian::nhap()
@@ -72,7 +81,17 @@ void ThoiGian::nhap()
 
 void ThoiGian::hien()
 {
-    cout<<gio<<":"<<phut;
+    if(gio<0 && phut<0)
+    {
+        cout<<"Khong hop le !";
+        return ;
+    }else if(phut<10)
+    {
+        cout<<gio<<":0"<<phut;
+    }else
+    {
+         cout<<gio<<":0"<<phut;
+    }
 }
 
 void ThoiDiem::nhap()
