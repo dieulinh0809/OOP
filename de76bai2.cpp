@@ -11,94 +11,42 @@ using namespace std;
 //Tao doi tuong la danh sach lien ket don
 class DSLKD
 {
-    private:
-        struct node
-        {
-            int infor;
-            node*link;
-        }*F;
-    public:
-        //Ham tao va ham huy
-        DSLKD();
-        ~DSLKD();
-        //Ham nhap , ham dua ra phan tu ,ham tim kiem
-        void push(int x);
-        void display();
-        bool sreach(int x);
+private:
+    struct node {
+        int infor;
+        node*link;
+    }*F;
+public:
+    //Ham tao va ham huy
+    DSLKD();
+    ~DSLKD();
+    //Ham nhap , ham dua ra phan tu ,ham tim kiem
+    void push(int x);
+    void display();
+    bool sreach(int x);
 
 };
-//==Chuong trinh chinh==//
+//==Chuong trinh chinh
 int main()
-{te:
-        struct node
-                {
-                            int infor;
-                                        node*link;
-                                                }*F;
-                                                    public:
-                                                            //Ham tao va ham huy
-                                                                    DSLKD();
-                                                                            ~DSLKD();
-                                                                                    //Ham nhap , ham dua ra phan tu ,ham tim kiem
-                                                                                            void push(int x);
-                                                                                                    void display();
-                                                                                                            bool sreach(int x);
-
-                                                                                                            };
-                                                                                                            //==Chuong trinh chinh==//
-                                                                                                            int main()
-                                                                                                            {
-                                                                                                                //Tao doi tuong
-                                                                                                                    DSLKD ds;
-                                                                                                                        //Tuong tac voi doi tuong
-                                                                                                                            //Nhap vao du lieu tu file
-                                                                                                                                int x,x1;
-                                                                                                                                    ifstream file("daysonguyen-thi.txt");
-                                                                                                                                        while(file>>x)
-                                                                                                                                            {
-                                                                                                                                                    ds.push(x);
-                                                                                                                                                        }
-                                                                                                                                                            //Nhap vao so can tim roi dua ra ket qua tim kiem
-                                                                                                                                                                cout<<"Nhap vao so can tim kiem : ";
- cout<<"Nhap vao so can tim kiem : ";
-                                                                                                                                                                    cin>>x1;
-                                                                                                                                                                        if(ds.sreach(x1)==true)
-                                                                                                                                                                            {
-                                                                                                                                                                                    cout<<"Co trong danh sach ! "<<endl;
-                                                                                                                                                                                        }
-                                                                                                                                                                                            else
-                                                                                                                                                                                                {
-                                                                                                                                                                                                        cout<<"Khong co trong danh sach ! "<<
-endl;
-                                                                                                                                                                                                            }
-                                                                                                                                                                                                                //Dua ra danh sach
-                                                                                                                                                                                                                    cout<<"Danh sach nhap tu
-file la : ";
-                                                                                                                                                                                                                        ds.display();
-                                                                                                                                                                                                                            cout<<endl;
-                                                                                                                                                                                                                                return 0;
-                                                                                                                                                                                                                                :q:}
-
-    //Tao doi tuong
+{
+//Tao doi tuong
     DSLKD ds;
     //Tuong tac voi doi tuong
     //Nhap vao du lieu tu file
     int x,x1;
     ifstream file("daysonguyen-thi.txt");
-    while(file>>x)
-    {
+    while(file>>x) {
         ds.push(x);
     }
     //Nhap vao so can tim roi dua ra ket qua tim kiem
     cout<<"Nhap vao so can tim kiem : ";
+    cout<<"Nhap vao so can tim kiem : ";
     cin>>x1;
-    if(ds.sreach(x1)==true)
-    {
+    if(ds.sreach(x1)==true) {
         cout<<"Co trong danh sach ! "<<endl;
-    }
-    else
-    {
-        cout<<"Khong co trong danh sach ! "<<endl;
+    } else {
+        cout<<"Khong co trong danh sach ! "<<
+            endl;
     }
     //Dua ra danh sach
     cout<<"Danh sach nhap tu file la : ";
@@ -115,8 +63,7 @@ DSLKD::DSLKD():F(NULL)
 
 DSLKD:: ~DSLKD()
 {
-    while(F)
-    {
+    while(F) {
         node*p=F;
         F=F->link;
         delete p;
@@ -131,15 +78,13 @@ void  DSLKD::push(int x)
     N->infor=x;
     N->link=NULL;
     //Th danh sach rong
-    if(F==NULL)
-    {
+    if(F==NULL) {
         F=N;
         return;
     }
     //Tim nut cuoi cung
     node*p=F;
-    while(p->link != NULL)
-    {
+    while(p->link != NULL) {
         p=p->link;
     }
 
@@ -150,8 +95,7 @@ void  DSLKD::push(int x)
 void  DSLKD::display()
 {
     //Cho  chạy tơi nút cuối , mỗi lần chạy đưa ra giá trị của nút đó
-    while(F)
-    {
+    while(F) {
         cout<<F->infor<<" ";
         F=F->link;
     }
@@ -161,10 +105,8 @@ bool  DSLKD::sreach(int x)
 {
     //Đặt p = F rồi cho p chạy đến  nút cuối cùng ,nếu có giá trị nút =x thì trả về true không có trả về false
     node*p=F;
-    while(p->link != NULL)
-    {
-        if(p->infor == x)
-        {
+    while(p->link != NULL) {
+        if(p->infor == x) {
             return true;
         }
         p=p->link;
